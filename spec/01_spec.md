@@ -53,27 +53,6 @@ Plugins will let users do the following
    * Immediately before writing to stdout (Display Plugins)
    * An alternative codepath that deserializes an existing task list (Query Plugin)
 
-## Plugin Types
-
-### Task Mutating Plugins
-
-```
-read only: false
-```
-
-### Display Plugins
-
-```
-read only: true
-```
-
-### Query Plugins
-
-```
-read only: true
-creates subcommand: true
-```
-
 
 ## Example setup
 
@@ -202,3 +181,25 @@ See: systemd-run --scope for newer linuxes, for example.
 
 At a minimum, we should have a reasonable default timeout.
 A well-behaved plugin should run _very_ quickly.
+
+
+## Plugin Types
+
+### Task Mutating Plugins
+
+```
+read only: false
+```
+
+### Display Plugins
+
+```
+read only: true
+```
+
+### Query Plugins
+
+```
+read only: true
+creates subcommand: true
+```
